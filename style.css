@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: url(rex.png);
+    background-position: center;
+    background-size: cover;
+    height: 650vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 0;
+    display: flex;
+    margin: auto;
+    padding: 10px 0;
+    text-align: center;
+    justify-content: space-between;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 80%;
+    background-color: rgb(124, 117, 117);
+    z-index: 9999;
+}
+
+    .nav-item.active .nav-link {
+    border-bottom: 2px solid #070300;
+}
+
+
+.navbar .logo{
+    width: 80px;
+    cursor: pointer;
+    margin-top: 15%;
+    margin-left: -2%;
+}
+
+.profile-img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: moveShadow 5s infinite alternate; 
+}
+
+.profile-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes moveShadow {
+    0% {
+        box-shadow: 0px 10px 10px rgba(88, 208, 238, 0.5);
+    }
+    100% {
+        box-shadow: 0px 10px 25px rgba(168, 238, 4, 0.192); 
+    }
+}
+
+
+ul{
+    margin-top: -4%;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 16px;
+}
+
+ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: darkslategray;
+    margin-top: -3%;
+    transition: .4s ease;
+
+}
+
+ul li a:hover{
+    color: rgb(230,104,59);
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.education{
+    margin-bottom: 20px;
+}
+.level{
+    font-weight: bold;
+}
+
+.info{
+    margin-left: 7%;
+    margin-top: 6%;
+}
+
+.info h1{
+    font-size: 65px;
+    color: rgb(36,32,30);
+}
+
+.info h3{
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.info span{
+    color: rgb(230,104,59);
+}
+
+.info a{
+    text-decoration:  none;
+    color: #fff;
+    background: rgb(36,32,30);
+    margin: 26px 0;
+    padding: 10px 18px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .4s ease;
+}
+
+.info a:hover{
+    background: rgb(167, 206, 218);
+}
+
+.image{
+    width: 30%;
+    height: 60%;
+    position: center;
+    right: 100px;
+    bottom: 0;
+}
+
+.image img{
+    position: center;
+    height: 100%;
+    left: 40%;
+    transform: translate(-55%);
+    bottom: 0;
+    transition: left 2s ease;
+}
+
+.image:hover .girl{
+    left: 55%;
+}
+
+.icon-link:hover ion-icon {
+    color: blue; 
+}
+
+.profile-img img:hover {
+    opacity: 0.8;
+}
+
+.achievement-image img:hover {
+    transform: scale(1.1); 
+}
+
+
+.icons a{
+    text-decoration: none;
+    color: #000;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon-link {
+    margin: 0 10px; 
+}
+
+.icon-link ion-icon {
+    font-size: 50px; 
+}
+
+@media (max-width: 576px) {
+    .icon-link ion-icon {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .icon-link {
+        margin: 0 20px; 
+    }
+}
+
+.icons {
+    max-width: 600px;
+    margin: 0 auto; 
+}
+
+
+.achievement-images {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.achievement-image img {
+    max-width: 100%; 
+    height: auto;
+    margin: 10px; 
+}
+
+.list-group {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.list-group-item {
+    margin-bottom: 20px; 
+}
+
+
+.contact-icon .icon img {
+    width: 40px; 
+    height: 40px; 
+}
+
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-icon {
+    margin: 0 20px; 
+    
+}
+
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-icon {
+    margin: 0 10px; 
+}
+
+.contact-icon img {
+    max-width: 15%; 
+    height: auto;
+}
+
+@media only screen and (max-width: 576px) {
+    .contact-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-icon {
+        margin: 0 10px; 
+    }
+}
+
+.contact-icon {
+    margin-right: 20px; 
+}
+
+.contact-icon:last-child {
+    margin-right: 0; 
+}
+
+
+
+.footer {
+    text-align: center;
+    margin-bottom: 20px; 
+}
